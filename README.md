@@ -1,3 +1,3 @@
 # BookManager
 
-#### [Use Cases](UseCaces.md)
+#### [Use Cases](UseCases.md)
