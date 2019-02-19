@@ -10,3 +10,6 @@ C:\Users\jdrob525\source\repos\BookManager\BookManager\obj\Debug\BookManager.vbp
 C:\Users\jdrob525\source\repos\BookManager\BookManager\obj\Debug\BookManager.exe
 C:\Users\jdrob525\source\repos\BookManager\BookManager\obj\Debug\BookManager.xml
 C:\Users\jdrob525\source\repos\BookManager\BookManager\obj\Debug\BookManager.pdb
+C:\Users\jdrob525\Source\Repos\BookManager\BookManager\bin\Debug\BookManager.accdb
+C:\Users\jdrob525\Source\Repos\BookManager\BookManager\obj\Debug\BookManager.Admin.resources
+C:\Users\jdrob525\Source\Repos\BookManager\BookManager\obj\Debug\BookManager.Form1.resources
