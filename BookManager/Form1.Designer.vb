@@ -30,25 +30,27 @@ Partial Class Form1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -114,6 +116,7 @@ Partial Class Form1
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.TextBox2)
         Me.TabPage1.Controls.Add(Me.TextBox1)
@@ -128,70 +131,14 @@ Partial Class Form1
         Me.TabPage1.Text = "Student"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'Button1
         '
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
-        Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Controls.Add(Me.Label4)
-        Me.TabPage2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(186, 126)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "User"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.Button3)
-        Me.TabPage3.Controls.Add(Me.TextBox7)
-        Me.TabPage3.Controls.Add(Me.Label7)
-        Me.TabPage3.Controls.Add(Me.TextBox5)
-        Me.TabPage3.Controls.Add(Me.TextBox6)
-        Me.TabPage3.Controls.Add(Me.Label5)
-        Me.TabPage3.Controls.Add(Me.Label6)
-        Me.TabPage3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(186, 126)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Admin"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(77, 38)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 7
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(77, 9)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 6
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 41)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Password:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 12)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 13)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Username:"
+        Me.Button1.Location = New System.Drawing.Point(55, 64)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Login"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -225,6 +172,106 @@ Partial Class Form1
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Username:"
         '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.Button5)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.TextBox3)
+        Me.TabPage2.Controls.Add(Me.TextBox4)
+        Me.TabPage2.Controls.Add(Me.Label3)
+        Me.TabPage2.Controls.Add(Me.Label4)
+        Me.TabPage2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(186, 126)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "User"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(54, 64)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Login"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(77, 38)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 7
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(77, 9)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 41)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 13)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Password:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(6, 12)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(67, 13)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Username:"
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.Button3)
+        Me.TabPage3.Controls.Add(Me.TextBox7)
+        Me.TabPage3.Controls.Add(Me.Label7)
+        Me.TabPage3.Controls.Add(Me.TextBox5)
+        Me.TabPage3.Controls.Add(Me.TextBox6)
+        Me.TabPage3.Controls.Add(Me.Label5)
+        Me.TabPage3.Controls.Add(Me.Label6)
+        Me.TabPage3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(186, 126)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Admin"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(54, 93)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Login"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(74, 67)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.TabIndex = 13
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(3, 70)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(64, 13)
+        Me.Label7.TabIndex = 12
+        Me.Label7.Text = "2FA Pass:"
+        '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(74, 36)
@@ -257,48 +304,23 @@ Partial Class Form1
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Username:"
         '
-        'TextBox7
+        'Button4
         '
-        Me.TextBox7.Location = New System.Drawing.Point(74, 67)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 13
+        Me.Button4.Location = New System.Drawing.Point(55, 93)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 10
+        Me.Button4.Text = "Register"
+        Me.Button4.UseVisualStyleBackColor = True
         '
-        'Label7
+        'Button5
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 70)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 13)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "2FA Pass:"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(55, 64)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(54, 64)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Login"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(54, 93)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Login"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button5.Location = New System.Drawing.Point(54, 93)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 10
+        Me.Button5.Text = "Register"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -352,4 +374,6 @@ Partial Class Form1
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class
