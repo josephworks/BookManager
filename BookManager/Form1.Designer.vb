@@ -77,7 +77,7 @@ Partial Class Form1
         'RegisterToolStripMenuItem
         '
         Me.RegisterToolStripMenuItem.Name = "RegisterToolStripMenuItem"
-        Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.RegisterToolStripMenuItem.Text = "&Register"
         '
         'ExitToolStripMenuItem
