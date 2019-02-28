@@ -1,0 +1,3 @@
+﻿Module MyGlobals
+
+End Module

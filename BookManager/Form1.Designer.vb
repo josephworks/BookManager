@@ -25,17 +25,18 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegisterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IHaveAnAccountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -49,8 +50,6 @@ Partial Class Form1
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -70,7 +69,7 @@ Partial Class Form1
         '
         'LoginToolStripMenuItem
         '
-        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegisterToolStripMenuItem, Me.IHaveAnAccountToolStripMenuItem})
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegisterToolStripMenuItem})
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.LoginToolStripMenuItem.Text = "&Login"
@@ -80,12 +79,6 @@ Partial Class Form1
         Me.RegisterToolStripMenuItem.Name = "RegisterToolStripMenuItem"
         Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RegisterToolStripMenuItem.Text = "&Register"
-        '
-        'IHaveAnAccountToolStripMenuItem
-        '
-        Me.IHaveAnAccountToolStripMenuItem.Name = "IHaveAnAccountToolStripMenuItem"
-        Me.IHaveAnAccountToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.IHaveAnAccountToolStripMenuItem.Text = "&I have an account"
         '
         'ExitToolStripMenuItem
         '
@@ -130,6 +123,15 @@ Partial Class Form1
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Student"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(55, 93)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 10
+        Me.Button4.Text = "Register"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -188,6 +190,15 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "User"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(54, 93)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 10
+        Me.Button5.Text = "Register"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -304,24 +315,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Username:"
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(55, 93)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Register"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(54, 93)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "Register"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -350,7 +343,6 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents LoginToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegisterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents IHaveAnAccountToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TabControl1 As TabControl
