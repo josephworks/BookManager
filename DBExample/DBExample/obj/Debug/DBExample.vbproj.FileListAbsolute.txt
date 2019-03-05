@@ -1,0 +1,15 @@
+C:\Users\taclarke\source\repos\DBExample\DBExample\bin\Debug\ebooks.accdb
+C:\Users\taclarke\source\repos\DBExample\DBExample\bin\Debug\DBExample.exe.config
+C:\Users\taclarke\source\repos\DBExample\DBExample\bin\Debug\DBExample.exe
+C:\Users\taclarke\source\repos\DBExample\DBExample\bin\Debug\DBExample.pdb
+C:\Users\taclarke\source\repos\DBExample\DBExample\bin\Debug\DBExample.xml
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.vbprojAssemblyReference.cache
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.Form1.resources
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.Resources.resources
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.vbproj.GenerateResource.cache
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.vbproj.CoreCompileInputs.cache
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.exe
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.xml
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.pdb
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.Form2.resources
+C:\Users\taclarke\source\repos\DBExample\DBExample\obj\Debug\DBExample.Form3.resources

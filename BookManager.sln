@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BookManager", "BookManager\BookManager.vbproj", "{2E71D856-2D64-4239-A5C9-5C944CBF2C62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{176FADEA-2FE0-4AD0-92E5-33E3F231CB3F}"
-	ProjectSection(SolutionItems) = preProject
-		BookManager.mdb = BookManager.mdb
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
