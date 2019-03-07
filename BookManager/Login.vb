@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Login
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Application.Exit()
     End Sub

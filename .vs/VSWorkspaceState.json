@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BookManager"
+    "\\BookManager",
+    "\\DBExample"
   ],
-  "SelectedNode": "\\BookManager\\Admin.vb",
+  "SelectedNode": "\\DBExample\\DBExample.sln",
   "PreviewInSolutionExplorer": false
 }
