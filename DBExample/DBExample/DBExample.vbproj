@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E71D856-2D64-4239-A5C9-5C944CBF2C62}</ProjectGuid>
+    <ProjectGuid>{5A650078-B3FA-4449-9887-270297A2F4E1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>BookManager.My.MyApplication</StartupObject>
-    <RootNamespace>BookManager</RootNamespace>
-    <AssemblyName>BookManager</AssemblyName>
+    <StartupObject>DBExample.My.MyApplication</StartupObject>
+    <RootNamespace>DBExample</RootNamespace>
+    <AssemblyName>DBExample</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>BookManager.xml</DocumentationFile>
+    <DocumentationFile>DBExample.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>BookManager.xml</DocumentationFile>
+    <DocumentationFile>DBExample.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -52,7 +53,6 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,21 +73,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.Designer.vb">
-      <DependentUpon>Admin.vb</DependentUpon>
+    <Compile Include="AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin.vb">
+    <Compile Include="AddUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookManagerDataSet.Designer.vb">
+    <Compile Include="ebooksDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BookManagerDataSet.xsd</DependentUpon>
+      <DependentUpon>ebooksDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BookManagerDataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BookManagerDataSet1.xsd</DependentUpon>
+    <Compile Include="EditBooks.Designer.vb">
+      <DependentUpon>EditBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditBooks.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -96,6 +97,19 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -111,32 +125,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MyGlobals.vb" />
-    <Compile Include="Register.Designer.vb">
-      <DependentUpon>Register.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Register.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SplashScreen.Designer.vb">
-      <DependentUpon>SplashScreen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SplashScreen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="User.Designer.vb">
-      <DependentUpon>User.vb</DependentUpon>
-    </Compile>
-    <Compile Include="User.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.vb</DependentUpon>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBooks.resx">
+      <DependentUpon>EditBooks.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -144,32 +148,18 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
-      <DependentUpon>SplashScreen.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BookManagerDataSet.xsc">
-      <DependentUpon>BookManagerDataSet.xsd</DependentUpon>
+    <None Include="ebooksDataSet.xsc">
+      <DependentUpon>ebooksDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BookManagerDataSet.xsd">
+    <None Include="ebooksDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BookManagerDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>ebooksDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BookManagerDataSet.xss">
-      <DependentUpon>BookManagerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BookManagerDataSet1.xsc">
-      <DependentUpon>BookManagerDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BookManagerDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BookManagerDataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BookManagerDataSet1.xss">
-      <DependentUpon>BookManagerDataSet1.xsd</DependentUpon>
+    <None Include="ebooksDataSet.xss">
+      <DependentUpon>ebooksDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -183,8 +173,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BookManager.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="ebooks.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
