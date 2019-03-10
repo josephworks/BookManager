@@ -16,3 +16,7 @@ C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Login.resour
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.SplashScreen.resources
 C:\Users\roula\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Teacher.resources
 C:\Users\roula\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Student.resources
+C:\Users\roula\Source\Repos\BookManager\ELibrary\bin\Debug\ELibrary.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\ELibrary\bin\Debug\ELibrary.application
+C:\Users\roula\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.application
