@@ -23,27 +23,27 @@ Partial Class EditBooks
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditBooks))
         Dim IDLabel As System.Windows.Forms.Label
         Dim TitleLabel As System.Windows.Forms.Label
         Dim AuthorLabel As System.Windows.Forms.Label
         Dim CountLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EditBooks))
         Me.EbooksDataSet = New ELibrary.ebooksDataSet()
         Me.BooksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BooksTableAdapter = New ELibrary.ebooksDataSetTableAdapters.BooksTableAdapter()
         Me.TableAdapterManager = New ELibrary.ebooksDataSetTableAdapters.TableAdapterManager()
         Me.BooksBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BooksBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.IDTextBox = New System.Windows.Forms.TextBox()
         Me.TitleTextBox = New System.Windows.Forms.TextBox()
@@ -51,8 +51,11 @@ Partial Class EditBooks
         Me.CountTextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         IDLabel = New System.Windows.Forms.Label()
         TitleLabel = New System.Windows.Forms.Label()
         AuthorLabel = New System.Windows.Forms.Label()
@@ -63,7 +66,46 @@ Partial Class EditBooks
         Me.BooksBindingNavigator.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'IDLabel
+        '
+        IDLabel.AutoSize = True
+        IDLabel.Location = New System.Drawing.Point(20, 32)
+        IDLabel.Name = "IDLabel"
+        IDLabel.Size = New System.Drawing.Size(21, 13)
+        IDLabel.TabIndex = 1
+        IDLabel.Text = "ID:"
+        '
+        'TitleLabel
+        '
+        TitleLabel.AutoSize = True
+        TitleLabel.Location = New System.Drawing.Point(20, 58)
+        TitleLabel.Name = "TitleLabel"
+        TitleLabel.Size = New System.Drawing.Size(30, 13)
+        TitleLabel.TabIndex = 3
+        TitleLabel.Text = "Title:"
+        '
+        'AuthorLabel
+        '
+        AuthorLabel.AutoSize = True
+        AuthorLabel.Location = New System.Drawing.Point(20, 84)
+        AuthorLabel.Name = "AuthorLabel"
+        AuthorLabel.Size = New System.Drawing.Size(41, 13)
+        AuthorLabel.TabIndex = 5
+        AuthorLabel.Text = "Author:"
+        '
+        'CountLabel
+        '
+        CountLabel.AutoSize = True
+        CountLabel.Location = New System.Drawing.Point(20, 110)
+        CountLabel.Name = "CountLabel"
+        CountLabel.Size = New System.Drawing.Size(38, 13)
+        CountLabel.TabIndex = 7
+        CountLabel.Text = "Count:"
         '
         'EbooksDataSet
         '
@@ -101,9 +143,34 @@ Partial Class EditBooks
         Me.BooksBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.BooksBindingNavigator.Name = "BooksBindingNavigator"
         Me.BooksBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.BooksBindingNavigator.Size = New System.Drawing.Size(800, 25)
+        Me.BooksBindingNavigator.Size = New System.Drawing.Size(281, 25)
         Me.BooksBindingNavigator.TabIndex = 0
         Me.BooksBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -137,16 +204,9 @@ Partial Class EditBooks
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
         Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
@@ -169,26 +229,8 @@ Partial Class EditBooks
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BooksBindingNavigatorSaveItem
         '
@@ -198,15 +240,6 @@ Partial Class EditBooks
         Me.BooksBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.BooksBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'IDLabel
-        '
-        IDLabel.AutoSize = True
-        IDLabel.Location = New System.Drawing.Point(20, 32)
-        IDLabel.Name = "IDLabel"
-        IDLabel.Size = New System.Drawing.Size(21, 13)
-        IDLabel.TabIndex = 1
-        IDLabel.Text = "ID:"
-        '
         'IDTextBox
         '
         Me.IDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "ID", True))
@@ -214,15 +247,6 @@ Partial Class EditBooks
         Me.IDTextBox.Name = "IDTextBox"
         Me.IDTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IDTextBox.TabIndex = 2
-        '
-        'TitleLabel
-        '
-        TitleLabel.AutoSize = True
-        TitleLabel.Location = New System.Drawing.Point(20, 58)
-        TitleLabel.Name = "TitleLabel"
-        TitleLabel.Size = New System.Drawing.Size(30, 13)
-        TitleLabel.TabIndex = 3
-        TitleLabel.Text = "Title:"
         '
         'TitleTextBox
         '
@@ -232,15 +256,6 @@ Partial Class EditBooks
         Me.TitleTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TitleTextBox.TabIndex = 4
         '
-        'AuthorLabel
-        '
-        AuthorLabel.AutoSize = True
-        AuthorLabel.Location = New System.Drawing.Point(20, 84)
-        AuthorLabel.Name = "AuthorLabel"
-        AuthorLabel.Size = New System.Drawing.Size(41, 13)
-        AuthorLabel.TabIndex = 5
-        AuthorLabel.Text = "Author:"
-        '
         'AuthorTextBox
         '
         Me.AuthorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Author", True))
@@ -248,15 +263,6 @@ Partial Class EditBooks
         Me.AuthorTextBox.Name = "AuthorTextBox"
         Me.AuthorTextBox.Size = New System.Drawing.Size(100, 20)
         Me.AuthorTextBox.TabIndex = 6
-        '
-        'CountLabel
-        '
-        CountLabel.AutoSize = True
-        CountLabel.Location = New System.Drawing.Point(20, 110)
-        CountLabel.Name = "CountLabel"
-        CountLabel.Size = New System.Drawing.Size(38, 13)
-        CountLabel.TabIndex = 7
-        CountLabel.Text = "Count:"
         '
         'CountTextBox
         '
@@ -276,9 +282,9 @@ Partial Class EditBooks
         Me.GroupBox1.Controls.Add(TitleLabel)
         Me.GroupBox1.Controls.Add(AuthorLabel)
         Me.GroupBox1.Controls.Add(Me.TitleTextBox)
-        Me.GroupBox1.Location = New System.Drawing.Point(21, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(229, 143)
+        Me.GroupBox1.Size = New System.Drawing.Size(232, 143)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Default Edit Using Navigation"
@@ -287,43 +293,74 @@ Partial Class EditBooks
         '
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.ComboBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(377, 54)
+        Me.GroupBox2.Location = New System.Drawing.Point(6, 6)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(348, 199)
+        Me.GroupBox2.Size = New System.Drawing.Size(232, 92)
         Me.GroupBox2.TabIndex = 10
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Edit Using Code"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(6, 46)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(220, 37)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Delete"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'ComboBox1
         '
         Me.ComboBox1.DataSource = Me.BooksBindingSource
         Me.ComboBox1.DisplayMember = "Title"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(28, 23)
+        Me.ComboBox1.Location = New System.Drawing.Point(6, 19)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(220, 21)
         Me.ComboBox1.TabIndex = 0
         Me.ComboBox1.ValueMember = "Title"
         '
-        'Button1
+        'TabControl1
         '
-        Me.Button1.Location = New System.Drawing.Point(165, 21)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Delete"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 28)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(252, 180)
+        Me.TabControl1.TabIndex = 11
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.GroupBox1)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(244, 154)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "TabPage1"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.GroupBox2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(244, 154)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'EditBooks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(281, 218)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.BooksBindingNavigator)
         Me.Name = "EditBooks"
-        Me.Text = "EditBooks"
+        Me.Text = "Edit Books"
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -332,6 +369,9 @@ Partial Class EditBooks
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -362,4 +402,7 @@ Partial Class EditBooks
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button1 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
 End Class
