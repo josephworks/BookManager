@@ -29,3 +29,7 @@ C:\Users\roula\source\repos\BookManager\BookManager\obj\Debug\BookManager.vbproj
 C:\Users\roula\source\repos\BookManager\BookManager\obj\Debug\BookManager.exe
 C:\Users\roula\source\repos\BookManager\BookManager\obj\Debug\BookManager.xml
 C:\Users\roula\source\repos\BookManager\BookManager\obj\Debug\BookManager.pdb
+C:\Users\roula\Source\Repos\BookManager\BookManager\bin\Debug\BookManager.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\BookManager\bin\Debug\BookManager.application
+C:\Users\roula\Source\Repos\BookManager\BookManager\obj\Debug\BookManager.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\BookManager\obj\Debug\BookManager.application
