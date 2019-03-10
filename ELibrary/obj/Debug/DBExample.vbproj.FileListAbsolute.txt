@@ -1,0 +1,17 @@
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\bin\Debug\ebooks.accdb
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\bin\Debug\ELibrary.exe.config
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\bin\Debug\ELibrary.exe
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\bin\Debug\ELibrary.pdb
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\bin\Debug\ELibrary.xml
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.vbprojAssemblyReference.cache
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.Form1.resources
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.Resources.resources
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.vbproj.GenerateResource.cache
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.vbproj.CoreCompileInputs.cache
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.exe
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.xml
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.pdb
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.Form2.resources
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.Form3.resources
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.AddUser.resources
+C:\Users\taclarke\source\repos\ELibrary\ELibrary\obj\Debug\ELibrary.EditBooks.resources
