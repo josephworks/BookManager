@@ -98,14 +98,14 @@ Partial Class SplashScreen
         '
         Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ApplicationTitle.BackColor = System.Drawing.Color.DimGray
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 32.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ApplicationTitle.ForeColor = System.Drawing.Color.PaleTurquoise
-        Me.ApplicationTitle.Location = New System.Drawing.Point(223, 57)
+        Me.ApplicationTitle.Location = New System.Drawing.Point(240, 80)
         Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(247, 104)
+        Me.ApplicationTitle.Size = New System.Drawing.Size(212, 57)
         Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Application Title"
-        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.ApplicationTitle.Text = "ELibrary"
+        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'SplashScreen
         '

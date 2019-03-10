@@ -4,7 +4,7 @@
         Me.VouchersTableAdapter.Fill(Me.EbooksDataSet.Vouchers)
         'TODO: This line of code loads data into the 'EbooksDataSet.Books' table. You can move, or remove it, as needed.
         Me.BooksTableAdapter.Fill(Me.EbooksDataSet.Books)
-        Label1.Text = currentUser
+        ToolStripStatusLabel2.Text = currentUser
 
         'load listbox with all books this student has checked out 
         'this is a fancy query that uses two tables 
@@ -19,5 +19,9 @@
         Me.Validate()
         Me.BooksBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.EbooksDataSet)
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Application.Exit()
     End Sub
 End Class
