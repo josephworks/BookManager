@@ -29,8 +29,8 @@ Partial Class Form3
         Me.BooksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BooksTableAdapter = New ELibrary.ebooksDataSetTableAdapters.BooksTableAdapter()
         Me.TableAdapterManager = New ELibrary.ebooksDataSetTableAdapters.TableAdapterManager()
-        Me.VouchersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.VouchersTableAdapter = New ELibrary.ebooksDataSetTableAdapters.VouchersTableAdapter()
+        Me.VouchersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,7 +48,7 @@ Partial Class Form3
         'booksListBox
         '
         Me.booksListBox.FormattingEnabled = True
-        Me.booksListBox.Location = New System.Drawing.Point(3, 55)
+        Me.booksListBox.Location = New System.Drawing.Point(3, 16)
         Me.booksListBox.Name = "booksListBox"
         Me.booksListBox.Size = New System.Drawing.Size(120, 95)
         Me.booksListBox.TabIndex = 1
@@ -75,14 +75,14 @@ Partial Class Form3
         Me.TableAdapterManager.UsersTableAdapter = Nothing
         Me.TableAdapterManager.VouchersTableAdapter = Me.VouchersTableAdapter
         '
+        'VouchersTableAdapter
+        '
+        Me.VouchersTableAdapter.ClearBeforeFill = True
+        '
         'VouchersBindingSource
         '
         Me.VouchersBindingSource.DataMember = "Vouchers"
         Me.VouchersBindingSource.DataSource = Me.EbooksDataSet
-        '
-        'VouchersTableAdapter
-        '
-        Me.VouchersTableAdapter.ClearBeforeFill = True
         '
         'Form3
         '

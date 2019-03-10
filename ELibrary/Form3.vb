@@ -19,6 +19,5 @@
         Me.Validate()
         Me.BooksBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.EbooksDataSet)
-
     End Sub
 End Class

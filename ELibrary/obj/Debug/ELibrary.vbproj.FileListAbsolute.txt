@@ -5,7 +5,6 @@ C:\Users\roula\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.pdb
 C:\Users\roula\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.xml
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.vbprojAssemblyReference.cache
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.EditBooks.resources
-C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Form2.resources
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Form3.resources
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Resources.resources
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.vbproj.GenerateResource.cache
@@ -16,3 +15,4 @@ C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.pdb
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Register.resources
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Login.resources
 C:\Users\roula\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.SplashScreen.resources
+C:\Users\roula\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Teacher.resources

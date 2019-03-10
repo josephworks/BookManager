@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class Teacher
     Private Sub VouchersBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.VouchersBindingSource.EndEdit()
@@ -54,11 +54,17 @@
         Me.Validate()
         Me.VouchersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.EbooksDataSet)
-
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        EditBooks.ShowDialog()
+        EditBooks.Show()
+    End Sub
+
+    Private Sub EditBooksToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles EditBooksToolStripMenuItem.Click
+        EditBooks.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Application.Exit()
     End Sub
 End Class

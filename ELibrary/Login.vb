@@ -19,7 +19,7 @@
         If logins.Count = 1 AndAlso logins(0).Password = passwordTextBox.Text Then
             currentUser = logins(0).UserName
             If logins(0).Role = "T" Then
-                Dim f2 As New Form2
+                Dim f2 As New Teacher
                 f2.ShowDialog()
             End If
             If logins(0).Role = "S" Then
@@ -51,7 +51,7 @@
         If logins.Count = 1 AndAlso logins(0).Password = passwordTextBox.Text Then
             currentUser = logins(0).UserName
             If logins(0).Role = "T" Then
-                Dim f2 As New Form2
+                Dim f2 As New Teacher
                 f2.ShowDialog()
             End If
             If logins(0).Role = "S" Then
