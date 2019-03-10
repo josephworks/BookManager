@@ -32,3 +32,7 @@ C:\Users\roula\source\repos\BookManager\DBExample\obj\Debug\DBExample.vbproj.Cor
 C:\Users\roula\source\repos\BookManager\DBExample\obj\Debug\DBExample.exe
 C:\Users\roula\source\repos\BookManager\DBExample\obj\Debug\DBExample.xml
 C:\Users\roula\source\repos\BookManager\DBExample\obj\Debug\DBExample.pdb
+C:\Users\roula\Source\Repos\BookManager\DBExample\bin\Debug\DBExample.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\DBExample\bin\Debug\DBExample.application
+C:\Users\roula\Source\Repos\BookManager\DBExample\obj\Debug\DBExample.exe.manifest
+C:\Users\roula\Source\Repos\BookManager\DBExample\obj\Debug\DBExample.application
