@@ -12,7 +12,7 @@
 
         'Application title
         If My.Application.Info.Title <> "" Then
-            ApplicationTitle.Text = My.Application.Info.Title
+            NewMethod()
         Else
             'If the application title is missing, use the application name, without the extension
             ApplicationTitle.Text = System.IO.Path.GetFileNameWithoutExtension(My.Application.Info.AssemblyName)
@@ -29,7 +29,14 @@
         Version.Text = System.String.Format(Version.Text, My.Application.Info.Version.Major, My.Application.Info.Version.Minor)
 
         'Copyright info
-        Copyright.Text = My.Application.Info.Copyright
+        Copyright.Text = "Copyright JosephWorks 2019"
     End Sub
 
+    Private Sub NewMethod()
+        ApplicationTitle.Text = My.Application.Info.Title
+    End Sub
+
+    Private Sub Version_Click(sender As Object, e As EventArgs) Handles Version.Click
+        MainLayoutPanel.BackgroundImage.Dispose()
+    End Sub
 End Class
