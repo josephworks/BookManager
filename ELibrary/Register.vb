@@ -22,6 +22,7 @@
         Me.Validate()
         Me.UsersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.EbooksDataSet)
+        Me.Close()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click

@@ -1,4 +1,4 @@
-﻿Public Class Form3
+﻿Public Class Student
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'EbooksDataSet.Vouchers' table. You can move, or remove it, as needed.
         Me.VouchersTableAdapter.Fill(Me.EbooksDataSet.Vouchers)

@@ -19,14 +19,11 @@
         If logins.Count = 1 AndAlso logins(0).Password = passwordTextBox.Text Then
             currentUser = logins(0).UserName
             If logins(0).Role = "T" Then
-                Dim f2 As New Teacher
-                f2.ShowDialog()
+                Teacher.Show()
             End If
             If logins(0).Role = "S" Then
-                Dim f3 As New Form3
-                f3.ShowDialog()
+                Student.Show()
             End If
-
         Else
             MessageBox.Show("Login Failed", "User Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -55,7 +52,7 @@
                 f2.ShowDialog()
             End If
             If logins(0).Role = "S" Then
-                Dim f3 As New Form3
+                Dim f3 As New Student
                 f3.ShowDialog()
             End If
 

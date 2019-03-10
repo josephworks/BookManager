@@ -118,10 +118,10 @@
     <Compile Include="Teacher.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Student.Designer.vb">
+      <DependentUpon>Student.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="Student.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlobalModule.vb" />
@@ -160,8 +160,8 @@
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
