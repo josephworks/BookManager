@@ -255,7 +255,7 @@ Partial Class Login
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(186, 126)
         Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Admin"
+        Me.TabPage3.Text = "Joseph"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
         'Button3

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin
+Partial Class Joseph
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Admin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Joseph))
         Me.BookManagerDataSet1 = New BookManager.BookManagerDataSet1()
         Me.BooksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BooksTableAdapter = New BookManager.BookManagerDataSet1TableAdapters.BooksTableAdapter()
@@ -253,7 +253,7 @@ Partial Class Admin
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Users"
         '
-        'Admin
+        'Joseph
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -263,8 +263,8 @@ Partial Class Admin
         Me.Controls.Add(Me.UsersDataGridView)
         Me.Controls.Add(Me.BooksDataGridView)
         Me.Controls.Add(Me.BooksBindingNavigator)
-        Me.Name = "Admin"
-        Me.Text = "Admin"
+        Me.Name = "Joseph"
+        Me.Text = "Joseph"
         CType(Me.BookManagerDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BooksBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
