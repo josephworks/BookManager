@@ -24,7 +24,6 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.LoginButton = New System.Windows.Forms.Button()
-        Me.passwordTextBox = New System.Windows.Forms.TextBox()
         Me.userNameTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,6 +39,7 @@ Partial Class Login
         Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.passwordTextBox = New System.Windows.Forms.MaskedTextBox()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -54,21 +54,12 @@ Partial Class Login
         Me.LoginButton.Text = "Login"
         Me.LoginButton.UseVisualStyleBackColor = True
         '
-        'passwordTextBox
-        '
-        Me.passwordTextBox.Location = New System.Drawing.Point(100, 45)
-        Me.passwordTextBox.Name = "passwordTextBox"
-        Me.passwordTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.passwordTextBox.TabIndex = 8
-        Me.passwordTextBox.Text = "password"
-        '
         'userNameTextBox
         '
         Me.userNameTextBox.Location = New System.Drawing.Point(100, 21)
         Me.userNameTextBox.Name = "userNameTextBox"
         Me.userNameTextBox.Size = New System.Drawing.Size(100, 20)
         Me.userNameTextBox.TabIndex = 7
-        Me.userNameTextBox.Text = "teacher"
         '
         'Label2
         '
@@ -138,40 +129,48 @@ Partial Class Login
         'AddToolStripMenuItem
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
         Me.AddToolStripMenuItem.Text = "Add"
         '
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(101, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'passwordTextBox
+        '
+        Me.passwordTextBox.Location = New System.Drawing.Point(100, 49)
+        Me.passwordTextBox.Name = "passwordTextBox"
+        Me.passwordTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.passwordTextBox.TabIndex = 12
+        Me.passwordTextBox.ValidatingType = GetType(Integer)
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(211, 111)
+        Me.Controls.Add(Me.passwordTextBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LoginButton)
-        Me.Controls.Add(Me.passwordTextBox)
         Me.Controls.Add(Me.userNameTextBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -189,7 +188,6 @@ Partial Class Login
     End Sub
 
     Friend WithEvents LoginButton As Button
-    Friend WithEvents passwordTextBox As TextBox
     Friend WithEvents userNameTextBox As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
@@ -205,4 +203,5 @@ Partial Class Login
     Friend WithEvents ClearToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents passwordTextBox As MaskedTextBox
 End Class

@@ -125,6 +125,12 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentSettings.Designer.vb">
+      <DependentUpon>StudentSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Teacher.Designer.vb">
       <DependentUpon>Teacher.vb</DependentUpon>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSettings.resx">
+      <DependentUpon>StudentSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.vb</DependentUpon>

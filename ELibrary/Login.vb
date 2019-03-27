@@ -60,4 +60,9 @@
             MessageBox.Show("Login Failed", "User Login", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
+
+    Private Sub ClearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearToolStripMenuItem.Click
+        userNameTextBox.Clear()
+        passwordTextBox.Clear()
+    End Sub
 End Class
