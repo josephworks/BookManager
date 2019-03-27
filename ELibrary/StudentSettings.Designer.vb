@@ -25,6 +25,7 @@ Partial Class StudentSettings
         Me.components = New System.ComponentModel.Container()
         Dim UserNameLabel As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
+        Dim GradeLabel As System.Windows.Forms.Label
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,8 +41,10 @@ Partial Class StudentSettings
         Me.UserNameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.GradeTextBox = New System.Windows.Forms.TextBox()
         UserNameLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
+        GradeLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +59,15 @@ Partial Class StudentSettings
         UserNameLabel.Size = New System.Drawing.Size(63, 13)
         UserNameLabel.TabIndex = 3
         UserNameLabel.Text = "User Name:"
+        '
+        'PasswordLabel
+        '
+        PasswordLabel.AutoSize = True
+        PasswordLabel.Location = New System.Drawing.Point(19, 60)
+        PasswordLabel.Name = "PasswordLabel"
+        PasswordLabel.Size = New System.Drawing.Size(56, 13)
+        PasswordLabel.TabIndex = 4
+        PasswordLabel.Text = "Password:"
         '
         'MenuStrip1
         '
@@ -93,7 +105,7 @@ Partial Class StudentSettings
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 114)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 156)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(217, 22)
         Me.StatusStrip1.TabIndex = 1
@@ -141,15 +153,6 @@ Partial Class StudentSettings
         Me.UserNameTextBox.Size = New System.Drawing.Size(100, 20)
         Me.UserNameTextBox.TabIndex = 4
         '
-        'PasswordLabel
-        '
-        PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(19, 60)
-        PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New System.Drawing.Size(56, 13)
-        PasswordLabel.TabIndex = 4
-        PasswordLabel.Text = "Password:"
-        '
         'PasswordTextBox
         '
         Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsersBindingSource, "Password", True))
@@ -160,18 +163,37 @@ Partial Class StudentSettings
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 77)
+        Me.Button1.Location = New System.Drawing.Point(22, 109)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(166, 34)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Save User Settings"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'GradeLabel
+        '
+        GradeLabel.AutoSize = True
+        GradeLabel.Location = New System.Drawing.Point(36, 86)
+        GradeLabel.Name = "GradeLabel"
+        GradeLabel.Size = New System.Drawing.Size(39, 13)
+        GradeLabel.TabIndex = 7
+        GradeLabel.Text = "Grade:"
+        '
+        'GradeTextBox
+        '
+        Me.GradeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsersBindingSource, "Grade", True))
+        Me.GradeTextBox.Location = New System.Drawing.Point(81, 83)
+        Me.GradeTextBox.Name = "GradeTextBox"
+        Me.GradeTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.GradeTextBox.TabIndex = 8
+        '
         'StudentSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(217, 136)
+        Me.ClientSize = New System.Drawing.Size(217, 178)
+        Me.Controls.Add(GradeLabel)
+        Me.Controls.Add(Me.GradeTextBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(PasswordLabel)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -208,4 +230,5 @@ Partial Class StudentSettings
     Friend WithEvents UserNameTextBox As TextBox
     Friend WithEvents PasswordTextBox As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents GradeTextBox As TextBox
 End Class

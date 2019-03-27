@@ -75,7 +75,7 @@ Partial Class SplashScreen
         Me.Version.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Version.BackColor = System.Drawing.Color.Black
         Me.Version.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Version.ForeColor = System.Drawing.Color.Cyan
+        Me.Version.ForeColor = System.Drawing.Color.Aqua
         Me.Version.Location = New System.Drawing.Point(54, 8)
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(152, 23)
@@ -87,7 +87,7 @@ Partial Class SplashScreen
         Me.Copyright.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Copyright.BackColor = System.Drawing.Color.Black
         Me.Copyright.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Copyright.ForeColor = System.Drawing.Color.Cyan
+        Me.Copyright.ForeColor = System.Drawing.Color.Aqua
         Me.Copyright.Location = New System.Drawing.Point(5, 48)
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(250, 22)
@@ -98,7 +98,7 @@ Partial Class SplashScreen
         '
         Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ApplicationTitle.BackColor = System.Drawing.Color.DimGray
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ApplicationTitle.Font = New System.Drawing.Font("Goudy Old Style", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ApplicationTitle.ForeColor = System.Drawing.Color.PaleTurquoise
         Me.ApplicationTitle.Location = New System.Drawing.Point(240, 80)
         Me.ApplicationTitle.Name = "ApplicationTitle"

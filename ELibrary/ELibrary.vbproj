@@ -182,6 +182,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentSettings.resx">
       <DependentUpon>StudentSettings.vb</DependentUpon>
     </EmbeddedResource>

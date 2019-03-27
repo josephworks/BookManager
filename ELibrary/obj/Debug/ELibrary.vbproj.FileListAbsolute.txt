@@ -21,3 +21,4 @@ C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.xml
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.pdb
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.vbprojAssemblyReference.cache
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.StudentSettings.resources
+C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Report.resources

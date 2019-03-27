@@ -23,6 +23,7 @@ Partial Class Register
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Me.GradeLabel = New System.Windows.Forms.Label()
         Me.EbooksDataSet = New ELibrary.ebooksDataSet()
         Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UsersTableAdapter = New ELibrary.ebooksDataSetTableAdapters.UsersTableAdapter()
@@ -42,11 +43,21 @@ Partial Class Register
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.GradeTextBox = New System.Windows.Forms.TextBox()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'GradeLabel
+        '
+        Me.GradeLabel.AutoSize = True
+        Me.GradeLabel.Location = New System.Drawing.Point(28, 153)
+        Me.GradeLabel.Name = "GradeLabel"
+        Me.GradeLabel.Size = New System.Drawing.Size(39, 13)
+        Me.GradeLabel.TabIndex = 11
+        Me.GradeLabel.Text = "Grade:"
         '
         'EbooksDataSet
         '
@@ -104,9 +115,9 @@ Partial Class Register
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 160)
+        Me.Button1.Location = New System.Drawing.Point(12, 169)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(216, 61)
+        Me.Button1.Size = New System.Drawing.Size(216, 60)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
@@ -144,7 +155,7 @@ Partial Class Register
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(240, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(248, 24)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -176,9 +187,9 @@ Partial Class Register
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 231)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 233)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(240, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(248, 22)
         Me.StatusStrip1.TabIndex = 11
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -188,11 +199,21 @@ Partial Class Register
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(225, 17)
         Me.ToolStripStatusLabel1.Text = "Note: You can change these settings later"
         '
+        'GradeTextBox
+        '
+        Me.GradeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsersBindingSource, "Grade", True))
+        Me.GradeTextBox.Location = New System.Drawing.Point(97, 150)
+        Me.GradeTextBox.Name = "GradeTextBox"
+        Me.GradeTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.GradeTextBox.TabIndex = 12
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(240, 253)
+        Me.ClientSize = New System.Drawing.Size(248, 255)
+        Me.Controls.Add(Me.GradeLabel)
+        Me.Controls.Add(Me.GradeTextBox)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox1)
@@ -236,4 +257,6 @@ Partial Class Register
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents GradeTextBox As TextBox
+    Friend WithEvents GradeLabel As Label
 End Class

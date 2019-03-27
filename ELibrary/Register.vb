@@ -46,4 +46,12 @@
         TextBox2.Text = ""
         ComboBox1.ResetText()
     End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If ComboBox1.Text = "Student" Then
+            'Show grade level
+            GradeTextBox.Show()
+            GradeLabel.Show()
+        End If
+    End Sub
 End Class

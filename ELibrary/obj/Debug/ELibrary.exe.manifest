@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELibrary.exe" size="310784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELibrary.exe" size="323584">
       <assemblyIdentity name="ELibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fGRcAX8Hqc9gqny59cTrYLfcxiPz7gErc8sNYnAfWXI=</dsig:DigestValue>
+        <dsig:DigestValue>1S4CzLE0ddjrYix70P/2HWJRrmBWgjR7ob/Ewgdqi2M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ebooks.accdb" size="466944">
+  <file name="ebooks.accdb" size="561152">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Cx10kAuj+oqxIdbiyjRA28Jjenr0aJ+zaFPu8RfmK38=</dsig:DigestValue>
+      <dsig:DigestValue>9sPMpvXE/1+6ZHJ1GCaYn+2ur0/t2fSCK6NTmef4lIo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ELibrary.exe.config" size="494">

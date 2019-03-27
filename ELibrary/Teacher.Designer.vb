@@ -46,6 +46,11 @@ Partial Class Teacher
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.EditBooksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -54,10 +59,7 @@ Partial Class Teacher
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.EditBooksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,7 +104,7 @@ Partial Class Teacher
         Me.usersListBox.FormattingEnabled = True
         Me.usersListBox.Location = New System.Drawing.Point(12, 27)
         Me.usersListBox.Name = "usersListBox"
-        Me.usersListBox.Size = New System.Drawing.Size(171, 95)
+        Me.usersListBox.Size = New System.Drawing.Size(171, 108)
         Me.usersListBox.TabIndex = 0
         '
         'voucherTextBox
@@ -118,12 +120,12 @@ Partial Class Teacher
         Me.booksListBox.FormattingEnabled = True
         Me.booksListBox.Location = New System.Drawing.Point(189, 27)
         Me.booksListBox.Name = "booksListBox"
-        Me.booksListBox.Size = New System.Drawing.Size(160, 95)
+        Me.booksListBox.Size = New System.Drawing.Size(160, 108)
         Me.booksListBox.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(355, 53)
+        Me.Button1.Location = New System.Drawing.Point(354, 53)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 23)
         Me.Button1.TabIndex = 3
@@ -136,7 +138,7 @@ Partial Class Teacher
         Me.VouchersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.VouchersDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.VouchersDataGridView.DataSource = Me.VouchersBindingSource
-        Me.VouchersDataGridView.Location = New System.Drawing.Point(12, 128)
+        Me.VouchersDataGridView.Location = New System.Drawing.Point(12, 140)
         Me.VouchersDataGridView.Name = "VouchersDataGridView"
         Me.VouchersDataGridView.Size = New System.Drawing.Size(443, 220)
         Me.VouchersDataGridView.TabIndex = 4
@@ -226,6 +228,38 @@ Partial Class Teacher
         Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
+        'ToolStripDropDownButton1
+        '
+        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditBooksToolStripMenuItem, Me.ReportToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(38, 22)
+        Me.ToolStripDropDownButton1.Text = "File"
+        '
+        'EditBooksToolStripMenuItem
+        '
+        Me.EditBooksToolStripMenuItem.Name = "EditBooksToolStripMenuItem"
+        Me.EditBooksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EditBooksToolStripMenuItem.Text = "Edit Books"
+        '
+        'ReportToolStripMenuItem
+        '
+        Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
+        Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -286,37 +320,21 @@ Partial Class Teacher
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
-        'ToolStripDropDownButton1
+        'Button3
         '
-        Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditBooksToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
-        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(38, 22)
-        Me.ToolStripDropDownButton1.Text = "File"
-        '
-        'EditBooksToolStripMenuItem
-        '
-        Me.EditBooksToolStripMenuItem.Name = "EditBooksToolStripMenuItem"
-        Me.EditBooksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EditBooksToolStripMenuItem.Text = "Edit Books"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.Button3.Location = New System.Drawing.Point(355, 111)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(99, 23)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Report"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Teacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(466, 360)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.BindingNavigator1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.VouchersDataGridView)
@@ -373,4 +391,6 @@ Partial Class Teacher
     Friend WithEvents EditBooksToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button3 As Button
 End Class
