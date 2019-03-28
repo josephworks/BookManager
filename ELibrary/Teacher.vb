@@ -31,6 +31,11 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Check voucher text
+        If voucherTextBox.Text = "" Then
+            MessageBox.Show("Error: You must put voucher code in the voucher text field!", "Voucher", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
         'Find the selected book
         Dim books = From b In EbooksDataSet.Books
                     Where b.Title = booksListBox.SelectedItem

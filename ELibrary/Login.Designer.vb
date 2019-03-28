@@ -159,6 +159,7 @@ Partial Class Login
         '
         Me.passwordTextBox.Location = New System.Drawing.Point(100, 49)
         Me.passwordTextBox.Name = "passwordTextBox"
+        Me.passwordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwordTextBox.Size = New System.Drawing.Size(100, 20)
         Me.passwordTextBox.TabIndex = 12
         Me.passwordTextBox.ValidatingType = GetType(Integer)

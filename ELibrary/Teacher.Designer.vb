@@ -50,6 +50,8 @@ Partial Class Teacher
         Me.EditBooksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.StudentViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
@@ -60,8 +62,6 @@ Partial Class Teacher
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.StudentViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,7 +115,6 @@ Partial Class Teacher
         Me.voucherTextBox.Name = "voucherTextBox"
         Me.voucherTextBox.Size = New System.Drawing.Size(100, 20)
         Me.voucherTextBox.TabIndex = 1
-        Me.voucherTextBox.Text = "ABC-123-DEF"
         '
         'booksListBox
         '
@@ -256,6 +255,17 @@ Partial Class Teacher
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
+        'StudentViewToolStripMenuItem
+        '
+        Me.StudentViewToolStripMenuItem.Name = "StudentViewToolStripMenuItem"
+        Me.StudentViewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StudentViewToolStripMenuItem.Text = "Student View"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
@@ -330,17 +340,6 @@ Partial Class Teacher
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "Report"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'StudentViewToolStripMenuItem
-        '
-        Me.StudentViewToolStripMenuItem.Name = "StudentViewToolStripMenuItem"
-        Me.StudentViewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.StudentViewToolStripMenuItem.Text = "Student View"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'Teacher
         '
