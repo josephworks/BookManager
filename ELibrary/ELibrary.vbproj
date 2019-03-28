@@ -101,6 +101,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ebooksDataSet.vb">
+      <DependentUpon>ebooksDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Register.Designer.vb">
       <DependentUpon>Register.vb</DependentUpon>
     </Compile>

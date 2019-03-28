@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELibrary.exe" size="323584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ELibrary.exe" size="327680">
       <assemblyIdentity name="ELibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1S4CzLE0ddjrYix70P/2HWJRrmBWgjR7ob/Ewgdqi2M=</dsig:DigestValue>
+        <dsig:DigestValue>IBcM1g/03q4dM7BrXRtZW16IkdXsCjaPNdfbY8CjZbA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

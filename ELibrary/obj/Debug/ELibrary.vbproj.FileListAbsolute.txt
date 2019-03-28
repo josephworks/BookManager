@@ -8,6 +8,8 @@ C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\bin\Debug\ELibrary.xml
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Register.resources
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.EditBooks.resources
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Login.resources
+C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Report.resources
+C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.StudentSettings.resources
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Teacher.resources
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Student.resources
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Resources.resources
@@ -20,5 +22,3 @@ C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.exe
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.xml
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.pdb
 C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.vbprojAssemblyReference.cache
-C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.StudentSettings.resources
-C:\Users\jdrob525\Source\Repos\BookManager\ELibrary\obj\Debug\ELibrary.Report.resources

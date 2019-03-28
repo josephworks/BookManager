@@ -9,7 +9,8 @@
     Private Sub AddUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'EbooksDataSet.Users' table. You can move, or remove it, as needed.
         Me.UsersTableAdapter.Fill(Me.EbooksDataSet.Users)
-
+        GradeLabel.Hide()
+        GradeTextBox.Hide()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -48,7 +49,7 @@
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.Text = "Student" Then
+        If ComboBox1.Text = "S" Then
             'Show grade level
             GradeTextBox.Show()
             GradeLabel.Show()
