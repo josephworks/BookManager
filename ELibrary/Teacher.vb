@@ -77,7 +77,7 @@
     End Sub
 
     Private Sub StudentViewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudentViewToolStripMenuItem.Click
-        currentUser = "Teacher"
+        currentUser = "teacher"
         Student.Show()
     End Sub
 End Class
