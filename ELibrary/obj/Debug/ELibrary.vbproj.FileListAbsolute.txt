@@ -5,7 +5,6 @@ C:\Users\jdrob525\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.applicati
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.exe
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.pdb
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\bin\Debug\ELibrary.xml
-C:\Users\jdrob525\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.vbprojAssemblyReference.cache
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Register.resources
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.EditBooks.resources
 C:\Users\jdrob525\source\repos\BookManager\ELibrary\obj\Debug\ELibrary.Login.resources
