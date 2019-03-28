@@ -75,4 +75,9 @@
     Private Sub ReportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportToolStripMenuItem.Click
         Report.Show()
     End Sub
+
+    Private Sub StudentViewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudentViewToolStripMenuItem.Click
+        currentUser = "Teacher"
+        Student.Show()
+    End Sub
 End Class

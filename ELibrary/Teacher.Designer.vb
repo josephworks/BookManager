@@ -60,6 +60,8 @@ Partial Class Teacher
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.StudentViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         CType(Me.EbooksDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VouchersDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,7 +233,7 @@ Partial Class Teacher
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditBooksToolStripMenuItem, Me.ReportToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditBooksToolStripMenuItem, Me.ReportToolStripMenuItem, Me.ToolStripSeparator1, Me.StudentViewToolStripMenuItem, Me.ToolStripSeparator2, Me.ExitToolStripMenuItem})
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
         Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(38, 22)
@@ -329,6 +331,17 @@ Partial Class Teacher
         Me.Button3.Text = "Report"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'StudentViewToolStripMenuItem
+        '
+        Me.StudentViewToolStripMenuItem.Name = "StudentViewToolStripMenuItem"
+        Me.StudentViewToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StudentViewToolStripMenuItem.Text = "Student View"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        '
         'Teacher
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -393,4 +406,6 @@ Partial Class Teacher
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button3 As Button
+    Friend WithEvents StudentViewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class
